@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="shortcut icon" href="foto.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu1" href="about.html">Início</a>
+            <a class="cabecalho_menu1" href="index.html">Funcionalidades</a>
+            <img class="img" src="foto.png" alt="Imagem">
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <h1 class="titulo1">Crip+</h1>
+            <p class="paragrafo1">Site desenvolvido para você criptografar e descriptografar seus textos.</p>
+        </section>
+
+    <div>
+            <label class="textode_entrada" for="inputText">Texto de Entrada:</label>
+            <textarea class="caixade_entrada" id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+            <p class="paragrafo2"> Atenção digite apenas letras minúsculas e sem acento.</p>
+    </div>
+
+    <div class="botoes">
+        <button onclick="criptografar()" class="criptografar">Criptografar</button>
+        <button onclick="descriptografar()" class="descriptografar">Descriptografar</button>
+    </div>
+    <div id="output">
+            <label class="textode_saida" for="outputText">Texto de Saída:</label>
+            <textarea class="caixade_saida" id="outputText" placeholder="Resultado..." readonly></textarea>
+    </div>
+    </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Criado por Carina Freire. Projeto Alura</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
